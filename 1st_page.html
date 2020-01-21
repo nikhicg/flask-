@@ -1,0 +1,16 @@
+ {% extends 'bas.html' %}
+
+    {% block content %}
+        <h1>KNOW YOUR HOROSCOPE BY ENTERING <br>THE DATE OF BIRTH</h1>
+        <div class="a">
+            <form action="/result" method="post">
+                {% if error %}
+                <h2> ....{{ error }}....</h2>
+                {% endif %}
+                <h2>Enter the date of birth(Only in number)</h2>
+                <h2>(In Format (dd-mm-yyyy))</h2>
+                <input type="text"  name="date"><br><br>
+                <input type="submit" class="but" value="SUBMIT">
+            </form>
+        </div>
+    {% endblock %}

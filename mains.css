@@ -1,0 +1,35 @@
+.a{
+    text-align: center;
+    padding: 8% 0;
+    }
+.b{
+     color: blue;
+     text-align: center;
+     padding: 5% 0;
+}
+h3{
+    color: white;
+    }
+h1{
+    color: white;
+    text-align: center
+    }
+h2{
+    color: white;
+    }
+.but{
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size : 16px;
+    margin: 4px 2px;
+    cursor: pointer
+}
+body {
+    background-image:url('space.jpg');
+    background-size: auto;
+    background-color: blue;
+}

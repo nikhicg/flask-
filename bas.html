@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mains.css') }}">
+    {% endif %}
+</head>
+<body bgcolor="cyan">
+{% block content %}
+{% endblock %}
+</body>
+</html>

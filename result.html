@@ -1,0 +1,80 @@
+<h2><a href="/home">Home Page</a> </h2>
+{% extends 'bas.html' %}
+    {% block content %}
+        <div class="b">
+            <h2>For DOB {{ dob }}</h2>
+            <h2>Horoscope is {{ sign }} !</h2>
+            {% if sign == 'ARIES' %}
+            <h3>Your Element is <em>FIRE</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='aries.jpg')}}">
+            {% endif %}
+            {% if sign == 'TAURUS' %}
+            <h3>Your Element is <em>EARTH</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='taurus.jpg')}}">
+            {% endif %}
+            {% if sign == 'GEMINI' %}
+            <h3>>Your Element is <em>AIR</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='gemini.jpg')}}">
+            {% endif %}
+            {% if sign == 'CANCER' %}
+            <h3>Your Element is <em>WATER</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='cancer.jpg')}}">
+            {% endif %}
+            {% if sign == 'LEO' %}
+            <h3>Your Element is <em>FIRE</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='leo.jpg')}}">
+            {% endif %}
+            {% if sign == 'LIBRA' %}
+            <h3>>Your Element is <em>AIR</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='libra.jpg')}}">
+            {% endif %}
+            {% if sign == 'SCORPION' %}
+            <h3>Your Element is <em>WATER</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='scorpion.jpg')}}">
+            {% endif %}
+            {% if sign == 'SAGITTARIUS' %}
+            <h3>Your Element is <em>FIRE</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='sagittarius.jpg')}}">
+            {% endif %}
+            {% if sign == 'CAPRICORN' %}
+            <h3>Your Element is <em>EARTH</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='capricorn.jpg')}}">
+            {% endif %}
+            {% if sign == 'AQUARIUS' %}
+            <h3>>Your Element is <em>AIR</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='aquarius.jpg')}}">
+            {% endif %}
+            {% if sign == 'PISCES' %}
+            <h3>Your Element is <em>WATER</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='pisces.jpg')}}">
+            {% endif %}
+            {% if sign == 'VIRGO' %}
+            <h3>Your Element is <em>EARTH</em><br>
+                Your strength is <i>'''{{ stre }}'''</i><br>
+                Your weakness is <i>'''{{ weak }}'''</i></h3>
+            <h3>Your symbol is</h3> <img src="{{url_for('static', filename='virgo.jpg')}}">
+            {% endif %}
+        </div>
+    {% endblock %}
